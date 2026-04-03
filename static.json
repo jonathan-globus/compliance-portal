@@ -18,7 +18,7 @@
       },
         "transfer": {
           "collection_id": "1e5ab660-9945-4fd6-b3e7-98064952e114",
-          "path": "/portal/catalog/"
+          "path": "/"
         }
       }
     }
