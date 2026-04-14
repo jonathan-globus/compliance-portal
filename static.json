@@ -25,7 +25,7 @@
   },
 
   "branding": {
-    "logo": "assets\Globus_logo_BLUE_horizontal.png",
+    "logo": "assets/Globus_logo_BLUE_horizontal.png",
     "title": "Globus Compliance Portal",
     "subtitle": "Compliance Documentation"
   }
