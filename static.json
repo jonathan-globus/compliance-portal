@@ -9,7 +9,7 @@
     "attributes": {
       "content": {
         "title": "Globus Compliance Portal",
-        "privacy_policy": "Please see our privacy policy at https://www.globus.org/legal/privacy",
+        "privacy_policy": "See the Globus Privacy policy at https://www.globus.org/legal/privacy",
         "terms_of_service": "This is an example terms of service – you should replace this with your own terms."
       },
       "globus": {
