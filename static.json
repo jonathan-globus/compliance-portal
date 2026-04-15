@@ -4,6 +4,7 @@
       "name": "@globus/static-data-portal"
     }
   },
+  "homepage": "index",
   "data": {
     "version": "1.0.0",
     "attributes": {
