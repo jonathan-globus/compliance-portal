@@ -9,9 +9,9 @@
     "attributes": {
       "content": {
         "title": "Globus Compliance Portal",
-        "image": "assets/Globus_logo_BLUE_horizontal.png",
+        "image": "",
         "privacy_policy": "https://www.globus.org/legal/privacy",
-        "terms_of_service": "This is an example terms of service – you should replace this with your own terms."
+        "terms_of_service": "https://www.globus.org/legal/terms"
       },
       "globus": {
         "application": {
