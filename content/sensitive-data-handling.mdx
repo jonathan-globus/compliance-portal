@@ -1,0 +1,75 @@
+# Sensitive Data Handling
+
+Globus provides capabilities that support the secure management and transfer of sensitive or regulated data, including data subject to institutional policies or external requirements such as HIPAA, NIH, or other research data protections. These capabilities are designed to help institutions meet their compliance obligations while enabling researchers to work efficiently.
+
+---
+
+## High Assurance Collections
+
+High Assurance collections enforce enhanced security controls, including strong authentication, restricted session lifetimes, expanded audit logging, and mandatory encryption of all data transfers. These protections are applied automatically and cannot be disabled by end users or administrators.
+
+Institutions can define and enforce their own access policies, manage which users or groups may interact with protected collections, and maintain detailed audit records of data access and transfer activity.
+
+---
+
+## Institutional Responsibilities
+
+When using Globus for sensitive or regulated data, institutions retain responsibility for:
+
+- Defining appropriate access controls  
+- Ensuring users are authorized for the data they access  
+- Configuring High Assurance collections in alignment with institutional policies  
+- Reviewing audit logs and monitoring data access  
+- Maintaining compliance with applicable regulations  
+
+Globus provides the technical controls, but institutions determine how those controls are applied.
+
+## Key Controls at a Glance
+
+The following table summarizes the primary security and compliance controls that support the use of Globus for sensitive or regulated data. These controls are enforced by the Globus service and, where applicable, by institutional configuration of High Assurance collections.
+
+| Control Area | Description | Enforcement |
+|--------------|-------------|-------------|
+| **Mandatory Encryption** | All data transfers to and from High Assurance collections are encrypted in transit. Encryption cannot be disabled by users or administrators. | Enforced by Globus service |
+| **Strong Authentication** | Access requires authentication through approved identity providers. Institutions may require MFA or additional identity assurance. | Enforced by Globus + institutional identity policies |
+| **Session and Token Restrictions** | High Assurance collections use shorter session lifetimes and stricter token scopes to reduce risk of unauthorized access. | Enforced by Globus service |
+| **Granular Access Controls** | Institutions define which users or groups may access sensitive collections. Access can be limited to specific operations or paths. | Enforced by institution |
+| **Audit Logging** | Detailed logs record access, transfers, and administrative actions. Logs support institutional monitoring and compliance review. | Enforced by Globus + institution |
+| **Administrative Policy Controls** | Institutions can apply additional restrictions, such as limiting sharing, requiring specific identity providers, or restricting external access. | Enforced by institution |
+| **Secure Endpoint Configuration** | High Assurance endpoints must be configured to meet security requirements for sensitive data environments. | Enforced by institution (with Globus guidance) |
+
+---
+
+## Common Use Cases for Sensitive and Regulated Data
+
+Globus is used across research, higher education, and healthcare environments to support secure, compliant workflows involving sensitive or regulated data. The examples below illustrate typical scenarios where institutions rely on Globus High Assurance capabilities.
+
+### Research Data Subject to Institutional or Sponsor Requirements
+Researchers often work with data governed by institutional policies or external requirements such as NIH, NSF, or foundation‑specific data protections. Globus enables secure transfer and controlled access to these datasets while supporting collaborative research across institutions. High Assurance collections help ensure that sensitive research data remains protected throughout its lifecycle.
+
+### Healthcare and Clinical Research Environments
+Healthcare organizations and clinical research teams may handle data subject to HIPAA or similar regulatory frameworks. Globus High Assurance services provide enhanced authentication, mandatory encryption, and detailed audit logging, helping institutions meet their compliance obligations while enabling efficient data movement between clinical systems, research teams, and secure analysis environments.
+
+### University Data Stewardship and Privacy Programs
+Universities often maintain data stewardship programs that classify and protect institutional data. Globus allows data stewards to define and enforce access controls, restrict sharing, and maintain audit trails for sensitive datasets. These capabilities support privacy programs, internal policy requirements, and institutional risk management practices.
+
+### Secure Collaboration Across Institutions
+Collaborative research frequently involves sharing sensitive data between universities, national labs, healthcare organizations, and research consortia. Globus provides a secure, identity‑aware platform that allows institutions to control who can access protected collections while enabling efficient, policy‑aligned data sharing across organizational boundaries.
+
+### Controlled Access to High‑Value or Restricted Datasets
+Some datasets require controlled access due to licensing, confidentiality, or ethical considerations. Globus allows institutions to manage access through group‑based permissions, enforce strong authentication, and maintain detailed logs of data access and transfer activity. These controls help ensure that only authorized individuals can interact with restricted datasets.
+
+---
+
+## Additional Guidance for Administrators
+
+System administrators configuring Globus Connect Server for sensitive or regulated data can refer to the following guide for detailed requirements, configuration steps, and best practices:
+
+[Globus Connect Server: Handling Sensitive Data](https://docs.globus.org/globus-connect-server/v5.4/admin-guide-sensitive-data/)
+
+This guide includes information on endpoint configuration, authentication requirements, audit logging, and other administrative considerations.
+
+---
+
+If you have questions about using Globus for sensitive or regulated data, please contact your compliance or security administrator.
+Contact the Compliance Team for additional assistance at [compliance@globus.org](mailto:compliance@globus.org).
