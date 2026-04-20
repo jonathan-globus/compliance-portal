@@ -1,7 +1,6 @@
-[Home](./)
----
-
 # Sensitive Data Handling
+
+[Home](./)
 
 Globus provides capabilities that support the secure management and transfer of sensitive or regulated data, including data subject to institutional policies or external requirements such as HIPAA, CMMC, NIST frameworks, or other research data protections. These capabilities are designed to help institutions meet their compliance obligations while enabling researchers to work efficiently.
 
@@ -33,6 +32,8 @@ Globus provides the technical controls, but institutions determine how those con
 
 The following table summarizes the primary security and compliance controls that support the use of Globus for sensitive or regulated data. These controls are enforced by the Globus service and, where applicable, by institutional configuration of High Assurance collections.
 
+<div className="table-wrapper">
+
 | Control Area | Description | Enforcement |
 | :--- | :--- | :--- |
 | **Mandatory Encryption** | All data transfers to and from High Assurance collections are encrypted in transit. Encryption cannot be disabled by users or administrators. TLS 1.2 is enforced for both the data and control channels. | Enforced by Globus services |
@@ -42,6 +43,8 @@ The following table summarizes the primary security and compliance controls that
 | **Audit Logging** | Detailed logs record access, transfers, and administrative actions. Logs support institutional monitoring and compliance review. | Enforced by Globus and institution configuration settings |
 | **Administrative Policy Controls** | Institutions can apply additional restrictions, such as limiting sharing, requiring specific identity providers, or restricting external access. | Enforced by institution configuration settings |
 | **Secure Endpoint Configuration** | High Assurance endpoints must be configured to meet security requirements for sensitive data environments. | Enforced by institution configuration settings |
+
+</div>
 
 ---
 
@@ -59,7 +62,9 @@ Globus is used across a variety of highly regulated environments such as researc
 
 ## Additional Guidance for Administrators
 
-System administrators configuring Globus Connect Server for sensitive or regulated data can refer to the [Admin Guide for Sensitive Data](https://docs.globus.org/globus-connect-server/v5.4/admin-guide-sensitive-data/) for detailed requirements, configuration steps, and best practices. 
+System administrators configuring Globus Connect Server for sensitive or regulated data can refer to the Admin Guide for Sensitive Data for detailed requirements, configuration steps, and best practices:
+
+[Admin Guide for Sensitive Data](https://docs.globus.org/globus-connect-server/v5.4/admin-guide-sensitive-data/)
 
 This guide includes information on endpoint configuration, authentication requirements, audit logging, and other administrative considerations.
 
