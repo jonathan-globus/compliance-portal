@@ -36,3 +36,17 @@ tr:nth-child(even) {
 .chakra-link:hover {
   color: #0000CC;
 }
+
+.controls-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+.controls-table thead th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 12px; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-secondary); background: var(--color-background-secondary); }
+.controls-table tbody td { padding: 12px 14px; vertical-align: top; border-bottom: 0.5px solid var(--color-border-tertiary); color: var(--color-text-primary); line-height: 1.5; }
+.controls-table tbody tr:last-child td { border-bottom: none; }
+.controls-table tbody tr:hover td { background: var(--color-background-secondary); }
+.col-area { width: 18%; }
+.col-desc { width: 52%; }
+.col-enf { width: 30%; }
+.area-label { font-weight: 500; font-size: 13px; color: var(--color-text-primary); }
+.enf-badge { display: inline-block; font-size: 11px; padding: 3px 8px; border-radius: 4px; line-height: 1.4; }
+.enf-globus { background: var(--color-background-info); color: var(--color-text-info); }
+.enf-institution { background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); }
+.enf-both { background: var(--color-background-success); color: var(--color-text-success); }
