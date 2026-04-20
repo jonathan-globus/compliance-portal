@@ -1,52 +1,74 @@
+/* Base table styles */
 table {
   border-collapse: collapse;
   width: 100%;
   margin: 1.5rem 0;
   font-size: 0.95em;
 }
-
 thead {
   background-color: #f5f5f5;
 }
-
-th,
-td {
+th, td {
   border: 1px solid #d0d0d0;
   padding: 0.6rem 1rem;
   text-align: left;
 }
-
 th {
   font-weight: 600;
 }
-
 tr:nth-child(even) {
   background-color: #fafafa;
 }
 
-.chakra-link {
-  color: #0000EE;
-  text-decoration: underline;
-}
+/* Link styles */
+.chakra-link { color: #0000EE; text-decoration: underline; }
+.chakra-link:visited { color: #551A8B; }
+.chakra-link:hover { color: #0000CC; }
 
-.chakra-link:visited {
-  color: #551A8B;
+/* Controls table overrides */
+.controls-table {
+  table-layout: fixed;
+  font-size: 0.875rem;
 }
-
-.chakra-link:hover {
-  color: #0000CC;
+.controls-table thead th {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #555;
 }
-
-.controls-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
-.controls-table thead th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 12px; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-secondary); background: var(--color-background-secondary); }
-.controls-table tbody td { padding: 12px 14px; vertical-align: top; border-bottom: 0.5px solid var(--color-border-tertiary); color: var(--color-text-primary); line-height: 1.5; }
-.controls-table tbody tr:last-child td { border-bottom: none; }
-.controls-table tbody tr:hover td { background: var(--color-background-secondary); }
+.controls-table tbody td {
+  vertical-align: top;
+  line-height: 1.5;
+}
+.controls-table tbody tr:hover td {
+  background-color: #f0f4f8;
+}
 .col-area { width: 18%; }
 .col-desc { width: 52%; }
-.col-enf { width: 30%; }
-.area-label { font-weight: 500; font-size: 13px; color: var(--color-text-primary); }
-.enf-badge { display: inline-block; font-size: 11px; padding: 3px 8px; border-radius: 4px; line-height: 1.4; }
-.enf-globus { background: var(--color-background-info); color: var(--color-text-info); }
-.enf-institution { background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); }
-.enf-both { background: var(--color-background-success); color: var(--color-text-success); }
+.col-enf  { width: 30%; }
+
+.area-label {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* Enforcement badges */
+.enf-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+.enf-globus {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+.enf-institution {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+}
+.enf-both {
+  background-color: #dcfce7;
+  color: #166534;
+}

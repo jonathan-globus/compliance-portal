@@ -32,54 +32,52 @@ Globus provides the technical controls, but institutions determine how those con
 
 The following table summarizes the primary security and compliance controls that support the use of Globus for sensitive or regulated data. These controls are enforced by the Globus service and, where applicable, by institutional configuration of High Assurance collections.
 
-<div style="border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; margin: 0.5rem 0;">
-  <table class="controls-table">
-    <thead>
-      <tr>
-        <th class="col-area">Control area</th>
-        <th class="col-desc">Description</th>
-        <th class="col-enf">Enforcement</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="area-label">Mandatory encryption</span></td>
-        <td>All data transfers to and from High Assurance collections are encrypted in transit. Encryption cannot be disabled by users or administrators. TLS 1.2 is enforced for both the data and control channels.</td>
-        <td><span class="enf-badge enf-globus">Globus services</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Strong authentication</span></td>
-        <td>Access requires authentication through approved identity providers. Institutions may require MFA or additional identity assurance.</td>
-        <td><span class="enf-badge enf-both">Globus services &amp; institutional IdP</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Session &amp; token restrictions</span></td>
-        <td>High Assurance collections use shorter session lifetimes and stricter token scopes to reduce risk of unauthorized access.</td>
-        <td><span class="enf-badge enf-globus">Globus services</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Granular access controls</span></td>
-        <td>Institutions define which users or groups may access sensitive collections. Access can be limited to specific operations or paths.</td>
-        <td><span class="enf-badge enf-institution">Institution managed</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Audit logging</span></td>
-        <td>Detailed logs record access, transfers, and administrative actions. Logs support institutional monitoring and compliance review.</td>
-        <td><span class="enf-badge enf-both">Globus &amp; institution config</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Administrative policy controls</span></td>
-        <td>Institutions can apply additional restrictions, such as limiting sharing, requiring specific identity providers, or restricting external access.</td>
-        <td><span class="enf-badge enf-institution">Institution config</span></td>
-      </tr>
-      <tr>
-        <td><span class="area-label">Secure endpoint configuration</span></td>
-        <td>High Assurance endpoints must be configured to meet security requirements for sensitive data environments.</td>
-        <td><span class="enf-badge enf-institution">Institution config</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table class="controls-table">
+  <thead>
+    <tr>
+      <th class="col-area">Control area</th>
+      <th class="col-desc">Description</th>
+      <th class="col-enf">Enforcement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="area-label">Mandatory encryption</span></td>
+      <td>All data transfers to and from High Assurance collections are encrypted in transit. Encryption cannot be disabled by users or administrators. TLS 1.2 is enforced for both the data and control channels.</td>
+      <td><span class="enf-badge enf-globus">Globus services</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Strong authentication</span></td>
+      <td>Access requires authentication through approved identity providers. Institutions may require MFA or additional identity assurance.</td>
+      <td><span class="enf-badge enf-both">Globus services &amp; institutional IdP</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Session &amp; token restrictions</span></td>
+      <td>High Assurance collections use shorter session lifetimes and stricter token scopes to reduce risk of unauthorized access.</td>
+      <td><span class="enf-badge enf-globus">Globus services</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Granular access controls</span></td>
+      <td>Institutions define which users or groups may access sensitive collections. Access can be limited to specific operations or paths.</td>
+      <td><span class="enf-badge enf-institution">Institution managed</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Audit logging</span></td>
+      <td>Detailed logs record access, transfers, and administrative actions. Logs support institutional monitoring and compliance review.</td>
+      <td><span class="enf-badge enf-both">Globus &amp; institution config</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Administrative policy controls</span></td>
+      <td>Institutions can apply additional restrictions, such as limiting sharing, requiring specific identity providers, or restricting external access.</td>
+      <td><span class="enf-badge enf-institution">Institution config</span></td>
+    </tr>
+    <tr>
+      <td><span class="area-label">Secure endpoint configuration</span></td>
+      <td>High Assurance endpoints must be configured to meet security requirements for sensitive data environments.</td>
+      <td><span class="enf-badge enf-institution">Institution config</span></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
