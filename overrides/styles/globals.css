@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95em;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th,
+td {
+  border: 1px solid #d0d0d0;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.chakra-link {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.chakra-link:visited {
+  color: #551A8B;
+}
+
+.chakra-link:hover {
+  color: #0000CC;
+}
